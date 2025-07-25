@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý Sổ Tiết Kiệm</title>
+</head>
+<body>
+<h2>Quản lý Sổ Tiết Kiệm</h2>
+
+<h3>Thêm Sổ Tiết Kiệm Mới</h3>
+<form id="addForm">
+    <input type="text" id="maSo" placeholder="Mã sổ (tối đa 5 ký tự)" required><br><br>
+    <input type="text" id="loaiTietKiem" placeholder="Loại tiết kiệm (tối đa 10 ký tự)" required><br><br>
+    <input type="text" id="hoTen" placeholder="Họ tên khách hàng (tối đa 30 ký tự)" required><br><br>
+    <input type="number" id="cmnd" placeholder="Chứng minh nhân dân" required><br><br>
+    <input type="text" id="ngayMoSo" placeholder="Ngày mở sổ (YYYY-MM-DD)" required><br><br>
+    <input type="number" id="soTienGui" placeholder="Số tiền gửi" required><br><br>
+    <button type="submit">Thêm Sổ</button>
+</form>
+
+<hr>
+
+<h3>Xóa Sổ Tiết Kiệm</h3>
+<form id="deleteForm">
+    <input type="text" id="maSoXoa" placeholder="Nhập mã sổ cần xóa" required>
+    <button type="submit">Xóa Sổ</button>
+</form>
+
+<hr>
+
+<h3>Danh Sách Sổ Tiết Kiệm</h3>
+<table border="1" id="soTietKiemTable">
+    <thead>
+    <tr>
+        <th>Mã Sổ</th>
+        <th>Loại Tiết Kiệm</th>
+        <th>Họ Tên Khách Hàng</th>
+        <th>CMND</th>
+        <th>Ngày Mở Sổ</th>
+        <th>Số Tiền Gửi</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+<script src="bai_3_class_SOTIETKIEM.js"></script>
+<script src="bai_3_main.js"></script>
+</body>
+</html>
